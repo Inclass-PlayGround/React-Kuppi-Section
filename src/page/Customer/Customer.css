@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+h1{
+    @apply text-[3rem] font-bold text-amber-300 m-10 flex justify-center
+}
+
+.formWrapper{
+    @apply m-10 grid grid-cols-3 gap-5
+}
