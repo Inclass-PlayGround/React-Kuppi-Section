@@ -13,10 +13,11 @@ const Customer = () => {
 
     const [customers,setCustomers] = useState<CustomerModel[]>([])
 
-    const saveCustomer = (e:InputEvent)=>{
+    const saveCustomer = (e:InputEvent)=>{  
         e.preventDefault();
         const newCustomer = new CustomerModel(name,age,address,email);
         setCustomers([...customers,newCustomer])
+        alert("Customer Saved")
     }
 
   return (
